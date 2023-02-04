@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Fraunces", serif;
+  font-size: 14px;
+  margin: 20px 10px;
+  background-color: var(--Cream);
+}
+
+:root {
+  --Darkcyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Verydarkblue: hsl(212, 21%, 14%);
+  --Darkgrayishblue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+.img1 {
+  width: 350px;
+  height: 320px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.img2 {
+  display: none;
+}
+
+.class_main {
+  width: 350px;
+  display: grid;
+  background-color: var(--White);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  border-radius: 10px;
+}
+.container2 {
+  padding: 0 24px;
+}
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: var(--Darkgrayishblue);
+  letter-spacing: 2px;
+}
+
+.text {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.title2 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 25px;
+  margin: 10px;
+  color: var(--Darkgrayishblue);
+}
+.precio {
+  color: var(--Darkcyan);
+}
+.precio_text {
+  font-size: 15px;
+  color: var(--Darkgrayishblue);
+  text-decoration: line-through;
+}
+
+.carrito {
+  background-color: var(--Darkcyan);
+  color: var(--White);
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  margin-top: 15px;
+}
+.precios {
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media screen and (min-width: 1440px) {
+  .class_main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    width: 602px;
+    height: 450px;
+    margin: 175px 418px;
+  }
+  .img1 {
+    display: none;
+  }
+  .container2 {
+    grid-column: 2/3;
+    margin-top: 38px;
+    width: 301px;
+  }
+  .carrito {
+    width: 250px;
+    height: 50px;
+  }
+  .img2 {
+    display: block;
+    width: 301px;
+    height: 450px;
+    grid-column: 1/2;
+  }
+}
